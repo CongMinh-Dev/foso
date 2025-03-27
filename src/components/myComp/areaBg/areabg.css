@@ -1,0 +1,5 @@
+.areaBg{
+    background-image: linear-gradient(to right, #E0FFCC, #CCFFEC );
+    border-radius: 50%;
+    filter: blur(47.45px);
+}

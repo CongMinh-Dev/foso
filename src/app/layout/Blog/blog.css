@@ -1,0 +1,138 @@
+.blog{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 133px 0;
+    gap: 15px;
+    
+}
+.blog_left{
+    width: 70%;
+}
+.blog_right{
+    width: 25%;
+}
+
+.meeting{
+    position: relative;
+    padding: 24px 0px;
+
+}
+.meeting img{
+    height: 318px;
+}
+.meeting_content>p:first-of-type{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 135%;
+    width: 42%;
+    color: #FFFFFF;
+    margin-bottom: 32px;
+    
+}
+.meeting_content{
+    position: absolute;
+    top: 12%;
+    left: 7%;
+}
+.meeting_content button{
+    transition: all 0.5s;
+    width: 28%;
+
+}
+.meeting_content button:hover{
+    box-shadow:  5px 5px 12px #5a5a5a,
+    -5px -5px 12px #ffffff;
+    background-color: #013DA0;
+    width: 29%;
+}
+.meeting_content .my_arrow{
+    rotate: 320deg;
+
+}
+.my_table{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+.my_table_item{
+    width: 49%;
+    transition: all .5s;
+    border-radius: 24px;
+    
+    
+}
+.my_table_item:hover{
+    box-shadow:  5px 5px 12px #5a5a5a,
+    -5px -5px 12px #ffffff;
+}
+.my_table_img{
+    height: 475px;
+    border-radius: 24px;
+    
+}
+.bg_input{
+    position: relative;
+    margin-top: 18px;
+    margin-bottom: 18px;
+
+    
+}
+
+.bg_input input{
+    box-shadow:0 12 24px 0 #919EAB29; 
+    
+}
+.bg_input:hover input{
+    transition: all .5s;
+    box-shadow:  5px 5px 12px #5a5a5a,
+                 -5px -5px 12px #ffffff;
+}
+.bg_input input{
+    width: 100%;
+    border-radius: 12px;
+    padding: 12px 8px 12px 24px ;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.bg_icon_search{
+    background-color: #15AA7A;
+    color: #FFFFFF;
+    height: 30px;
+    width: 30px;
+    border-radius: 12px;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    right: 3%;
+    transform: translateY(-50%);
+}
+
+.img_right_content{
+position: relative;
+}
+
+.img_right_content button{
+    width: 90%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 8%;
+
+}
+.img_right_content button:hover{
+    transition: all 0.5s;
+    box-shadow:  5px 5px 12px #5a5a5a,
+                 -5px -5px 12px #ffffff;
+    background-color: #013DA0;
+    width: 92%;
+}
+.img_right_content .my_arrow{
+    rotate: 320deg;
+    font-weight: 400;
+}

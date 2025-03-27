@@ -1,17 +1,18 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
+import { Roboto, Inter } from 'next/font/google'
 import "./globals.css";
+import AreaBg from "../components/myComp/areaBg/AreaBg";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+const inter = Inter({
+  subsets: ['latin'],
+  display: 'swap',
+})
+
+const robo = Roboto({
+  weight: ["100", "300"],
+  subsets: ["vietnamese"]
+})
+
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -25,10 +26,38 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+      
+      <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/all.css"></link>
+      <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/all.css"></link>
+      <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-duotone-solid.css"></link>
+      <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-duotone-regular.css"></link>
+      <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-duotone-light.css"></link>
+      <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-thin.css"></link>
+      <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-solid.css"></link>
+      <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-solid.css"></link>
+      <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-solid.css"></link>
+      <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-solid.css"></link>
+      <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-solid.css"></link>
+      <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-solid.css"></link>
+      
+
+
+      </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${inter.className}`}
       >
-        {children}
+        <div className="bodyBg">
+          <AreaBg top="2875px" left="90%" />
+          <AreaBg top="528px" left="-339px" />
+          {children}
+
+        </div>
+
+
+
+
+
       </body>
     </html>
   );

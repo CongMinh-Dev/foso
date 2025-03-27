@@ -1,0 +1,39 @@
+.banner{
+    margin-top: 84px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.hand_img{
+    width: 195px;
+    height: 158.91px;
+    
+}
+.gardian_text{
+    background-image: linear-gradient(to right, #53B086, #53B086FC), radial-gradient(circle at center, #54ABB100 0, #54ABB168 41%, #85EEB3B5 71%, #54ABB100 0%);
+    background-clip: text;
+    color: transparent;
+}
+.banner__content{
+    width: 69%;
+}
+
+
+
+.my_bar{
+    
+    width: 25%;
+    height: 20px;
+    background-color: #85EEB3B5;
+    border-radius: 20px;
+    top: 60%;
+    right: 12%;
+}
+.my_text{
+    bottom: -84%;
+    left: 0;
+    position: absolute;
+}
