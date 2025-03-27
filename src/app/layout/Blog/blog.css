@@ -113,11 +113,11 @@
     transform: translateY(-50%);
 }
 
-.img_right_content{
+.blog_right .img_right_content{
 position: relative;
 }
 
-.img_right_content button{
+.blog_right .img_right_content button{
     width: 90%;
     position: absolute;
     left: 50%;
@@ -125,14 +125,14 @@ position: relative;
     bottom: 8%;
 
 }
-.img_right_content button:hover{
+.blog_right .img_right_content button:hover{
     transition: all 0.5s;
     box-shadow:  5px 5px 12px #5a5a5a,
                  -5px -5px 12px #ffffff;
     background-color: #013DA0;
     width: 92%;
 }
-.img_right_content .my_arrow{
+.blog_right .img_right_content .my_arrow{
     rotate: 320deg;
     font-weight: 400;
 }

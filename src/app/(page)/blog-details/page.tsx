@@ -242,11 +242,30 @@ export default function page() {
             <h3>7. Đối tượng nào nên áp dụng 5S?</h3>
             <h3>8. Các yếu tố tạo nên thành công cho quy trình 5S</h3>
           </div>
+
+          <div className='img_right_content' >
+            <img className='rounded-[24px] mt-[30px]' src="./img/mrpBeta.png" alt="mrp" />
+            <MyButton content={<div className='flex flex-wrap justify-between items-center'  >
+              <span >Trải Nghiệm Ngay </span>
+              <i className="fa-light fa-arrow-right my_arrow"></i>
+            </div>}
+              color='white' py='15px' px='4%' borderW='1px' />
+          </div>
+
+          <div className='img_right_content' >
+            <img className='rounded-[24px] mt-[30px]' src="./img/fmrp.png" alt="mrp" />
+            <MyButton content={<div className='flex flex-wrap justify-between items-center'  >
+              <span >Tham Gia Ngay </span>
+              <i className="fa-light fa-arrow-right my_arrow"></i>
+            </div>}
+              color='white' py='15px' px='4%' borderW='1px' />
+          </div>
+
         </div>
 
         {/* lien quan */}
         <div className='my_relative '>
-          {data.map((item,index) => {
+          {data.map((item, index) => {
             return <div className='my_item' key={index}>
               <Image className='my_table_img' src={item.url} alt='5s' width={500} height={475} />
               <MyButton borderW='0px' color='#0F4F9E' content={item.loai} bgColor='#E2F0FE' my='17px' />

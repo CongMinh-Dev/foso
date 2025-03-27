@@ -494,24 +494,24 @@ export default function Blog() {
   ]
 
 
-  let [isNone, setIsNone] = useState(false)
+  const [isNone, setIsNone] = useState(false)
 
 
-  let pageArray: any[] = []
-  let handleGetArrayPage = () => {
+  const pageArray: number[] = []
+  const handleGetArrayPage = () => {
     for (let i = 1; i <= (Math.ceil(data.length / 6)); i++) {
       pageArray.push(i)
     }
   }
   handleGetArrayPage()
 
-  let twoFistOfPage = pageArray.slice(0, 2)
+  const twoFistOfPage = pageArray.slice(0, 2)
 
-  let threeLastOfPage = pageArray.slice(-3)
+  const threeLastOfPage = pageArray.slice(-3)
 
 
 
-  let handleGetRange = (numberPage: number) => {
+  const handleGetRange = (numberPage: number) => {
     setIsNone(false)
     if (numberPage == 1) {
       setStartIndex(0)
@@ -519,7 +519,7 @@ export default function Blog() {
     setEndIndex(numberPage * 6)
   }
   // ok
-  let handleGetMidPage = () => {
+  const handleGetMidPage = () => {
     if (3 < (Math.floor(startIndex / 6) + 2) && (Math.floor(startIndex / 6) + 2) < pageArray.length - 2) {
 
       return <div>
@@ -553,7 +553,7 @@ export default function Blog() {
   }
 
 
-  let handleBackPage = () => {
+  const handleBackPage = () => {
     if (startIndex == 0) {
 
     } else {
@@ -563,7 +563,7 @@ export default function Blog() {
   }
 
 
-  let handleNextPage = () => {
+  const handleNextPage = () => {
     if ((Math.floor(startIndex / 6)) == pageArray.length - 1) {
       // setStartIndex(data.length - rowsPerPage);
       // setEndIndex(data.length);

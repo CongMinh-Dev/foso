@@ -1,5 +1,7 @@
 import './button.css'
-export default function MyButton(props: { content: any, color:string, bgColor?:string, px?:string, py?:string, borderW:string, mx?:string, my?:string, width?:string   }) {
+export default function MyButton(props: {
+     content: React.ReactNode, 
+     color:string, bgColor?:string, px?:string, py?:string, borderW:string, mx?:string, my?:string, width?:string   }) {
     return (
         
             <button className={`px-[12px] py-[8px] `}  

@@ -90,6 +90,31 @@ ol{
     padding-left: 10%;
 }
 
+
+.blog_details_right .img_right_content{
+    position: relative;
+    }
+    
+.blog_details_right .img_right_content button{
+        width: 85%;
+        position: absolute;
+        left: 46%;
+        transform: translateX(-50%);
+        bottom: 8%;
+    
+    }
+.blog_details_right .img_right_content button:hover{
+        transition: all 0.5s;
+        box-shadow:  5px 5px 12px #5a5a5a,
+                     -5px -5px 12px #ffffff;
+        background-color: #013DA0;
+        width: 92%;
+    }
+.blog_details_right .img_right_content .my_arrow{
+        rotate: 320deg;
+        font-weight: 400;
+    }
+
 /* my_relative */
 .my_relative {
     display: flex;
