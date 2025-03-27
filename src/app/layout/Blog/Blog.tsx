@@ -6,7 +6,7 @@ import {
   PaginationContent,
   PaginationItem,
 } from "@/components/ui/pagination"
-import { useEffect, useState } from 'react';
+import {  useState } from 'react';
 import MyButton from '@/components/myComp/myButton/MyButton';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -17,7 +17,7 @@ export default function Blog() {
   const rowsPerPage = 6;
   const [startIndex, setStartIndex] = useState(0);
   const [endIndex, setEndIndex] = useState(rowsPerPage);
-  let data: any[] = [
+  const data= [
     {
       url: "https://fososoft.vn/wp-content/uploads/2023/03/5s.png",
       loai: "quản lý sản xuất",
@@ -596,8 +596,8 @@ export default function Blog() {
 
 
         <div className='my_table'>
-          {data.slice(startIndex, endIndex).map((item: any) => {
-            return <div className='my_table_item'>
+          {data.slice(startIndex, endIndex).map((item,index) => {
+            return <div className='my_table_item' key={index}>
               <Link href={"/blog-details"}>
                 <Image className='my_table_img' src={item.url} alt='5s' width={500} height={475} />
                 <MyButton borderW='0px' color='#0F4F9E' content={item.loai} bgColor='#E2F0FE' my='17px' />

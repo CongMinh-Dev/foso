@@ -4,7 +4,7 @@ import Header from "@/app/layout/Header/Header";
 import Image from 'next/image';
 
 export default function page() {
-  let data = [{
+  const data = [{
     url: "https://fososoft.vn/wp-content/uploads/2022/11/quan-ly-san-xuat-3.png",
     loai: "quản lý sản xuất",
     tittle: "Tại sao Bom quan trọng trong quản lý sản xuất",
@@ -246,8 +246,8 @@ export default function page() {
 
         {/* lien quan */}
         <div className='my_relative '>
-          {data.map((item: any) => {
-            return <div className='my_item'>
+          {data.map((item,index) => {
+            return <div className='my_item' key={index}>
               <Image className='my_table_img' src={item.url} alt='5s' width={500} height={475} />
               <MyButton borderW='0px' color='#0F4F9E' content={item.loai} bgColor='#E2F0FE' my='17px' />
               <h1 className='text-[24px] font-extrabold leading-[150%]'>{item.tittle} </h1>

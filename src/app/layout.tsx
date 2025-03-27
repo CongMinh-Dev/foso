@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Roboto, Inter } from 'next/font/google'
+import { Inter } from 'next/font/google'
 import "./globals.css";
 import AreaBg from "../components/myComp/areaBg/AreaBg";
 
@@ -8,10 +8,6 @@ const inter = Inter({
   display: 'swap',
 })
 
-const robo = Roboto({
-  weight: ["100", "300"],
-  subsets: ["vietnamese"]
-})
 
 
 export const metadata: Metadata = {
