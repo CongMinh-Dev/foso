@@ -59,9 +59,49 @@ export default function Blog() {
 
     },
     {
+      url: "https://fososoft.vn/wp-content/uploads/2023/03/5s.png",
+      loai: "quản lý sản xuất",
+      tittle: "Quy trình 5S là gì? Cách ứng dụng hiệu quả nên biết",
+      date: "17/11/2022",
+      time: "10 phút đọc"
+
+    },
+    {
       url: "https://fososoft.vn/wp-content/uploads/2022/11/quan-ly-san-xuat-3.png",
       loai: "quản lý sản xuất",
       tittle: "Tại sao Bom quan trọng trong quản lý sản xuất",
+      date: "17/11/2022",
+      time: "10 phút đọc"
+
+    },
+    {
+      url: "https://fososoft.vn/wp-content/uploads/2022/11/quan-ly-san-xuat-3.png",
+      loai: "quản lý sản xuất",
+      tittle: "Tại sao Bom quan trọng trong quản lý sản xuất",
+      date: "17/11/2022",
+      time: "10 phút đọc"
+
+    },
+    {
+      url: "https://fososoft.vn/wp-content/uploads/2022/11/quan-ly-san-xuat-3.png",
+      loai: "quản lý sản xuất",
+      tittle: "Tại sao Bom quan trọng trong quản lý sản xuất",
+      date: "17/11/2022",
+      time: "10 phút đọc"
+
+    },
+    {
+      url: "https://fososoft.vn/wp-content/uploads/2022/11/quan-ly-san-xuat-3.png",
+      loai: "quản lý sản xuất",
+      tittle: "Tại sao Bom quan trọng trong quản lý sản xuất",
+      date: "17/11/2022",
+      time: "10 phút đọc"
+
+    },
+    {
+      url: "https://fososoft.vn/wp-content/uploads/2023/03/5s.png",
+      loai: "quản lý sản xuất",
+      tittle: "Quy trình 5S là gì? Cách ứng dụng hiệu quả nên biết",
       date: "17/11/2022",
       time: "10 phút đọc"
 
@@ -115,9 +155,49 @@ export default function Blog() {
 
     },
     {
+      url: "https://fososoft.vn/wp-content/uploads/2023/03/5s.png",
+      loai: "quản lý sản xuất",
+      tittle: "Quy trình 5S là gì? Cách ứng dụng hiệu quả nên biết",
+      date: "17/11/2022",
+      time: "10 phút đọc"
+
+    },
+    {
       url: "https://fososoft.vn/wp-content/uploads/2022/11/quan-ly-san-xuat-3.png",
       loai: "quản lý sản xuất",
       tittle: "Tại sao Bom quan trọng trong quản lý sản xuất",
+      date: "17/11/2022",
+      time: "10 phút đọc"
+
+    },
+    {
+      url: "https://fososoft.vn/wp-content/uploads/2022/11/quan-ly-san-xuat-3.png",
+      loai: "quản lý sản xuất",
+      tittle: "Tại sao Bom quan trọng trong quản lý sản xuất",
+      date: "17/11/2022",
+      time: "10 phút đọc"
+
+    },
+    {
+      url: "https://fososoft.vn/wp-content/uploads/2022/11/quan-ly-san-xuat-3.png",
+      loai: "quản lý sản xuất",
+      tittle: "Tại sao Bom quan trọng trong quản lý sản xuất",
+      date: "17/11/2022",
+      time: "10 phút đọc"
+
+    },
+    {
+      url: "https://fososoft.vn/wp-content/uploads/2022/11/quan-ly-san-xuat-3.png",
+      loai: "quản lý sản xuất",
+      tittle: "Tại sao Bom quan trọng trong quản lý sản xuất",
+      date: "17/11/2022",
+      time: "10 phút đọc"
+
+    },
+    {
+      url: "https://fososoft.vn/wp-content/uploads/2023/03/5s.png",
+      loai: "quản lý sản xuất",
+      tittle: "Quy trình 5S là gì? Cách ứng dụng hiệu quả nên biết",
       date: "17/11/2022",
       time: "10 phút đọc"
 
@@ -171,9 +251,49 @@ export default function Blog() {
 
     },
     {
+      url: "https://fososoft.vn/wp-content/uploads/2023/03/5s.png",
+      loai: "quản lý sản xuất",
+      tittle: "Quy trình 5S là gì? Cách ứng dụng hiệu quả nên biết",
+      date: "17/11/2022",
+      time: "10 phút đọc"
+
+    },
+    {
       url: "https://fososoft.vn/wp-content/uploads/2022/11/quan-ly-san-xuat-3.png",
       loai: "quản lý sản xuất",
       tittle: "Tại sao Bom quan trọng trong quản lý sản xuất",
+      date: "17/11/2022",
+      time: "10 phút đọc"
+
+    },
+    {
+      url: "https://fososoft.vn/wp-content/uploads/2022/11/quan-ly-san-xuat-3.png",
+      loai: "quản lý sản xuất",
+      tittle: "Tại sao Bom quan trọng trong quản lý sản xuất",
+      date: "17/11/2022",
+      time: "10 phút đọc"
+
+    },
+    {
+      url: "https://fososoft.vn/wp-content/uploads/2022/11/quan-ly-san-xuat-3.png",
+      loai: "quản lý sản xuất",
+      tittle: "Tại sao Bom quan trọng trong quản lý sản xuất",
+      date: "17/11/2022",
+      time: "10 phút đọc"
+
+    },
+    {
+      url: "https://fososoft.vn/wp-content/uploads/2022/11/quan-ly-san-xuat-3.png",
+      loai: "quản lý sản xuất",
+      tittle: "Tại sao Bom quan trọng trong quản lý sản xuất",
+      date: "17/11/2022",
+      time: "10 phút đọc"
+
+    },
+    {
+      url: "https://fososoft.vn/wp-content/uploads/2023/03/5s.png",
+      loai: "quản lý sản xuất",
+      tittle: "Quy trình 5S là gì? Cách ứng dụng hiệu quả nên biết",
       date: "17/11/2022",
       time: "10 phút đọc"
 
@@ -227,9 +347,9 @@ export default function Blog() {
 
     },
     {
-      url: "https://fososoft.vn/wp-content/uploads/2022/11/quan-ly-san-xuat-3.png",
+      url: "https://fososoft.vn/wp-content/uploads/2023/03/5s.png",
       loai: "quản lý sản xuất",
-      tittle: "Tại sao Bom quan trọng trong quản lý sản xuất",
+      tittle: "Quy trình 5S là gì? Cách ứng dụng hiệu quả nên biết",
       date: "17/11/2022",
       time: "10 phút đọc"
 
@@ -267,129 +387,9 @@ export default function Blog() {
 
     },
     {
-      url: "https://fososoft.vn/wp-content/uploads/2022/11/quan-ly-san-xuat-3.png",
+      url: "https://fososoft.vn/wp-content/uploads/2023/03/5s.png",
       loai: "quản lý sản xuất",
-      tittle: "Tại sao Bom quan trọng trong quản lý sản xuất",
-      date: "17/11/2022",
-      time: "10 phút đọc"
-
-    },
-    {
-      url: "https://fososoft.vn/wp-content/uploads/2022/11/quan-ly-san-xuat-3.png",
-      loai: "quản lý sản xuất",
-      tittle: "Tại sao Bom quan trọng trong quản lý sản xuất",
-      date: "17/11/2022",
-      time: "10 phút đọc"
-
-    },
-    {
-      url: "https://fososoft.vn/wp-content/uploads/2022/11/quan-ly-san-xuat-3.png",
-      loai: "quản lý sản xuất",
-      tittle: "Tại sao Bom quan trọng trong quản lý sản xuất",
-      date: "17/11/2022",
-      time: "10 phút đọc"
-
-    },
-    {
-      url: "https://fososoft.vn/wp-content/uploads/2022/11/quan-ly-san-xuat-3.png",
-      loai: "quản lý sản xuất",
-      tittle: "Tại sao Bom quan trọng trong quản lý sản xuất",
-      date: "17/11/2022",
-      time: "10 phút đọc"
-
-    },
-    {
-      url: "https://fososoft.vn/wp-content/uploads/2022/11/quan-ly-san-xuat-3.png",
-      loai: "quản lý sản xuất",
-      tittle: "Tại sao Bom quan trọng trong quản lý sản xuất",
-      date: "17/11/2022",
-      time: "10 phút đọc"
-
-    },
-    {
-      url: "https://fososoft.vn/wp-content/uploads/2022/11/quan-ly-san-xuat-3.png",
-      loai: "quản lý sản xuất",
-      tittle: "Tại sao Bom quan trọng trong quản lý sản xuất",
-      date: "17/11/2022",
-      time: "10 phút đọc"
-
-    },
-    {
-      url: "https://fososoft.vn/wp-content/uploads/2022/11/quan-ly-san-xuat-3.png",
-      loai: "quản lý sản xuất",
-      tittle: "Tại sao Bom quan trọng trong quản lý sản xuất",
-      date: "17/11/2022",
-      time: "10 phút đọc"
-
-    },
-    {
-      url: "https://fososoft.vn/wp-content/uploads/2022/11/quan-ly-san-xuat-3.png",
-      loai: "quản lý sản xuất",
-      tittle: "Tại sao Bom quan trọng trong quản lý sản xuất",
-      date: "17/11/2022",
-      time: "10 phút đọc"
-
-    },
-    {
-      url: "https://fososoft.vn/wp-content/uploads/2022/11/quan-ly-san-xuat-3.png",
-      loai: "quản lý sản xuất",
-      tittle: "Tại sao Bom quan trọng trong quản lý sản xuất",
-      date: "17/11/2022",
-      time: "10 phút đọc"
-
-    },
-    {
-      url: "https://fososoft.vn/wp-content/uploads/2022/11/quan-ly-san-xuat-3.png",
-      loai: "quản lý sản xuất",
-      tittle: "Tại sao Bom quan trọng trong quản lý sản xuất",
-      date: "17/11/2022",
-      time: "10 phút đọc"
-
-    },
-    {
-      url: "https://fososoft.vn/wp-content/uploads/2022/11/quan-ly-san-xuat-3.png",
-      loai: "quản lý sản xuất",
-      tittle: "Tại sao Bom quan trọng trong quản lý sản xuất",
-      date: "17/11/2022",
-      time: "10 phút đọc"
-
-    },
-    {
-      url: "https://fososoft.vn/wp-content/uploads/2022/11/quan-ly-san-xuat-3.png",
-      loai: "quản lý sản xuất",
-      tittle: "Tại sao Bom quan trọng trong quản lý sản xuất",
-      date: "17/11/2022",
-      time: "10 phút đọc"
-
-    },
-    {
-      url: "https://fososoft.vn/wp-content/uploads/2022/11/quan-ly-san-xuat-3.png",
-      loai: "quản lý sản xuất",
-      tittle: "Tại sao Bom quan trọng trong quản lý sản xuất",
-      date: "17/11/2022",
-      time: "10 phút đọc"
-
-    },
-    {
-      url: "https://fososoft.vn/wp-content/uploads/2022/11/quan-ly-san-xuat-3.png",
-      loai: "quản lý sản xuất",
-      tittle: "Tại sao Bom quan trọng trong quản lý sản xuất",
-      date: "17/11/2022",
-      time: "10 phút đọc"
-
-    },
-    {
-      url: "https://fososoft.vn/wp-content/uploads/2022/11/quan-ly-san-xuat-3.png",
-      loai: "quản lý sản xuất",
-      tittle: "Tại sao Bom quan trọng trong quản lý sản xuất",
-      date: "17/11/2022",
-      time: "10 phút đọc"
-
-    },
-    {
-      url: "https://fososoft.vn/wp-content/uploads/2022/11/quan-ly-san-xuat-3.png",
-      loai: "quản lý sản xuất",
-      tittle: "Tại sao Bom quan trọng trong quản lý sản xuất",
+      tittle: "Quy trình 5S là gì? Cách ứng dụng hiệu quả nên biết",
       date: "17/11/2022",
       time: "10 phút đọc"
 
