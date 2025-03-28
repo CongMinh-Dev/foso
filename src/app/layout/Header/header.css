@@ -10,7 +10,7 @@ header{
     box-shadow: 0 2 83.99px 0 #00000005; 
     position: fixed;
     top: 24px;
-    left: 48.5%;
+    left: 50%;
     transform: translateX(-50%);
     z-index: 5;
     

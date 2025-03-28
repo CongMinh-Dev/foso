@@ -1,9 +1,10 @@
 .blog_details{
-    width: 90%;
+    width: 80%;
     display: flex;
     flex-wrap: wrap;
     padding: 77px 0;
     gap: 15px;
+    justify-content: center;
 }
 /* left */
 .icon1{
@@ -17,6 +18,8 @@
 .blog_details_left .my_img{
     width: 100%;
 }
+
+
 .content h1{
     color: #15AA7A;
     font-weight: 800;
@@ -135,5 +138,27 @@ ol{
 .my_relative .my_item img{
     border-radius: 24px;
 
+}
+
+/* share */
+.blog_details .share{
+    position: fixed;
+    top: 50%;
+    left: 2%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+.blog_details .share_img{
+    transition: all .5s;
+    border-radius: 20.1px;
+    width: 60%;
+}
+.blog_details .share_img:hover{
+    transition: all .5s;
+    box-shadow:  5px 5px 12px #5a5a5a,
+                 -5px -5px 12px #ffffff;
 }
 

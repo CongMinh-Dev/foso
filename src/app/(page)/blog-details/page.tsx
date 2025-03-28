@@ -3,6 +3,7 @@ import './blogDetails.css'
 import Header from "@/app/layout/Header/Header";
 import Image from 'next/image';
 
+
 export default function page() {
   const data = [{
     url: "https://fososoft.vn/wp-content/uploads/2022/11/quan-ly-san-xuat-3.png",
@@ -27,9 +28,11 @@ export default function page() {
 
   },
   ]
+
   return (
     <main >
       <Header />
+
       <p className='py-12 w-[90%] mx-auto mt-[74px]'>Trang chủ <i className="fa-light fa-chevron-right text-[10px]"></i> Tài nguyên <i className="fa-light fa-chevron-right text-[10px]"></i> Blog
         <i className="fa-light fa-chevron-right text-[10px]"></i> <b>Quản Lý Sản Xuất</b>
       </p>
@@ -50,11 +53,11 @@ export default function page() {
               </div>
             </div>
             {/* trạng thái  */}
-            <div className='flex flex-wrap items-center justify-end w-[49%]'>
-              <div className='flex flex-wrap justify-between items-center w-[55%]'>
+            <div className='flex flex-wrap items-center justify-end w-[80%] '>
+              <div className='flex  justify-end items-center w-[55%] gap-2'>
                 <i className="fa-thin fa-calendar "></i>    <span className="text-[16px] text-[#667F93] mr-[24px]">Cập nhật vào: 17/11/2022 </span>
               </div>
-              <div className='flex flex-wrap justify-between items-center w-[25%]'>
+              <div className='flex  justify-end  items-center w-[25%] gap-2'>
                 <i className="fa-thin fa-clock-three "></i> <span className="text-[16px] text-[#667F93]  ">10 phút đọc</span>
               </div>
             </div>
@@ -294,7 +297,19 @@ export default function page() {
             </div>
           })}
         </div>
+
+        {/* share */}
+        <div className='share'>
+          <p className='text-[#33404A] text-[16px] leading-[150%] font-extrabold'>Chia sẻ</p>
+          <img className=' cursor-pointer share_img' src="./img/share1.png" alt="zalo" />
+          <img className=' cursor-pointer share_img' src="./img/share2.png" alt="face" />
+          <img className=' cursor-pointer share_img' src="./img/share3.png" alt="share" />
+          <img className=' cursor-pointer share_img' src="./img/share4.png" alt="share" />
+          <img className=' cursor-pointer share_img' src="./img/share5.png" alt="share" />
+        </div>
+
       </div>
+
 
 
 
