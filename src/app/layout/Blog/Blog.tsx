@@ -585,7 +585,6 @@ export default function Blog() {
         <div className="meeting">
           <img src='./img/meeting.png' alt='meeting' />
           <div className="meeting_content">
-            <p>Gia nhập cộng đồng FMRP – Kết nối, chia sẻ, cùng phát triển!</p>
             <MyButton content={<div className='flex flex-wrap justify-between items-center'  >
               <span >Tham Gia Ngay </span>
               <i className="fa-light fa-arrow-right my_arrow"></i>

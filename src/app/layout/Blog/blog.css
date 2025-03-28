@@ -30,14 +30,13 @@
     margin-bottom: 32px;
     
 }
-.meeting_content{
-    position: absolute;
-    top: 12%;
-    left: 7%;
-}
+
 .meeting_content button{
     transition: all 0.5s;
     width: 28%;
+    position: absolute;
+    bottom: 15%;
+    left: 7%;
 
 }
 .meeting_content button:hover{
