@@ -1,11 +1,7 @@
 "use client";
 import './blog.css'
 
-import {
-  Pagination,
-  PaginationContent,
-  PaginationItem,
-} from "@/components/ui/pagination"
+
 import { useState } from 'react';
 import MyButton from '@/components/myComp/myButton/MyButton';
 import Image from 'next/image';
