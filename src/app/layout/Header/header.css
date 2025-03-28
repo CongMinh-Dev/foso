@@ -70,10 +70,11 @@ header li:hover{
 
 header img{
     transition: all 0.5s;
+    border-radius: 10px;
 }
 header img:hover{
     width: 135px;
-    background-color: #f9fbfc;
+    background-color: #f9fbfc3d;
     
 
 }
