@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from 'next/font/google'
 import "./globals.css";
-import AreaBg from "../components/myComp/areaBg/AreaBg";
 
 const inter = Inter({
   subsets: ['latin'],
@@ -44,8 +43,7 @@ export default function RootLayout({
         className={`${inter.className}`}
       >
         <div className="bodyBg">
-          <AreaBg top="2875px" left="90%" />
-          <AreaBg top="528px" left="-339px" />
+          
           {children}
 
         </div>
