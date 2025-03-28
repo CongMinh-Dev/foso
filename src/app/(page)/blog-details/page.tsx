@@ -33,7 +33,7 @@ export default function page() {
     <main >
       <Header />
 
-      <p className='py-12 w-[90%] mx-auto mt-[74px]'>Trang chủ <i className="fa-light fa-chevron-right text-[10px]"></i> Tài nguyên <i className="fa-light fa-chevron-right text-[10px]"></i> Blog
+      <p className='py-12 w-[80%] mx-auto mt-[74px]'>Trang chủ <i className="fa-light fa-chevron-right text-[10px]"></i> Tài nguyên <i className="fa-light fa-chevron-right text-[10px]"></i> Blog
         <i className="fa-light fa-chevron-right text-[10px]"></i> <b>Quản Lý Sản Xuất</b>
       </p>
       <div className="blog_details mx-auto">
