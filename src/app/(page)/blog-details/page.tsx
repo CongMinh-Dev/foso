@@ -252,7 +252,7 @@ export default function page() {
               <span >Trải Nghiệm Ngay </span>
               <i className="fa-light fa-arrow-right my_arrow"></i>
             </div>}
-              color='white' py='15px' px='4%' borderW='1px' />
+              color='white' py='5px' px='4%' borderW='1px' />
           </div>
 
           <div className='img_right_content' >
@@ -261,7 +261,7 @@ export default function page() {
               <span >Tham Gia Ngay </span>
               <i className="fa-light fa-arrow-right my_arrow"></i>
             </div>}
-              color='white' py='15px' px='4%' borderW='1px' />
+              color='white' py='5px' px='4%' borderW='1px' />
           </div>
 
         </div>
@@ -286,8 +286,8 @@ export default function page() {
                 </div>
               </div>
               <div className='mb-[75px]'>
-                <MyButton width='40%' borderW='0px' color='#667F93' content={
-                  <div className='flex flex-wrap justify-between items-center'>
+                <MyButton  borderW='0px' color='#667F93' content={
+                  <div className='discover_button flex flex-wrap justify-between items-center'>
                     <span>Khám Phá thêm</span>
                     <i className="fa-thin fa-arrow-right"></i>
 

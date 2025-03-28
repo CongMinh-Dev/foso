@@ -24,7 +24,7 @@ export default function Header() {
     <header className='mx-auto  py-3'>
       <Link href={"/"}> <Image height={55.40999984741211} width={134} src={"/img/FOSO_Logo.png"} alt='foso' /> </Link>
       <div >
-        <ul className='flex justify-center items-center gap-3'>
+        <ul className=' flex justify-center items-center gap-3'>
           <li><Link href={"/"}>Về Chúng tôi</Link></li>
           <li><Link href={"/"}>Giải pháp</Link></li>
           <li><Link href={"/"}>Tài nguyên</Link></li>
@@ -32,7 +32,7 @@ export default function Header() {
         </ul>
       </div>
 
-      <div className='flex flex-wrap gap-2 items-center'>
+      <div className='flex flex-wrap gap-2 items-center flex_button'>
         <Dropdown menu={{ items }} trigger={['click']}>
           <a onClick={(e) => e.preventDefault()}>
             <Space>

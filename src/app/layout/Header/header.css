@@ -78,3 +78,31 @@ header img:hover{
     
 
 }
+
+@media screen and (max-width:991px){
+    header{
+        width: 30%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        /* justify-content: space-around;
+        align-items: center; */
+        position: fixed;
+        top: 50%;
+        right: -400px;
+        transform: translateY(-50%);
+        z-index: 5;
+        opacity: 0.3;
+    }
+    header:hover{
+        opacity: 1;
+        right: -200px;
+        transition: all .5s;
+    }
+    header ul{
+        flex-direction: column;
+    }
+    header .flex_button{
+        flex-direction: column;
+    }
+}

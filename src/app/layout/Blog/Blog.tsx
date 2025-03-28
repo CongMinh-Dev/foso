@@ -6,7 +6,7 @@ import {
   PaginationContent,
   PaginationItem,
 } from "@/components/ui/pagination"
-import {  useState } from 'react';
+import { useState } from 'react';
 import MyButton from '@/components/myComp/myButton/MyButton';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -17,7 +17,7 @@ export default function Blog() {
   const rowsPerPage = 6;
   const [startIndex, setStartIndex] = useState(0);
   const [endIndex, setEndIndex] = useState(rowsPerPage);
-  const data= [
+  const data = [
     {
       url: "https://fososoft.vn/wp-content/uploads/2023/03/5s.png",
       loai: "quản lý sản xuất",
@@ -522,7 +522,7 @@ export default function Blog() {
   const handleGetMidPage = () => {
     if (3 < (Math.floor(startIndex / 6) + 2) && (Math.floor(startIndex / 6) + 2) < pageArray.length - 2) {
 
-      return <div>
+      return <div >
         <button className={`bg-[#D1F7EA] rounded-[8px] py-[8px] px-[16px] hover:bg-slate-300  `} onClick={() => {
           handleGetRange(Math.floor(startIndex / 6) + 1)
         }
@@ -565,8 +565,6 @@ export default function Blog() {
 
   const handleNextPage = () => {
     if ((Math.floor(startIndex / 6)) == pageArray.length - 1) {
-      // setStartIndex(data.length - rowsPerPage);
-      // setEndIndex(data.length);
 
     } else {
       setStartIndex(startIndex + rowsPerPage);
@@ -595,7 +593,7 @@ export default function Blog() {
 
 
         <div className='my_table'>
-          {data.slice(startIndex, endIndex).map((item,index) => {
+          {data.slice(startIndex, endIndex).map((item, index) => {
             return <div className='my_table_item' key={index}>
               <Link href={"/blog-details"}>
                 <Image className='my_table_img' src={item.url} alt='5s' width={500} height={475} />
@@ -614,7 +612,7 @@ export default function Blog() {
                   </div>
                 </div>
                 <div className='mb-[75px]'>
-                  <MyButton width='40%' borderW='0px' color='#667F93' content={
+                  <MyButton borderW='0px' color='#667F93' content={
                     <div className='flex flex-wrap justify-between items-center'>
                       <span>Khám Phá thêm</span>
                       <i className="fa-thin fa-arrow-right"></i>
@@ -663,7 +661,7 @@ export default function Blog() {
               <span >Trải Nghiệm Ngay </span>
               <i className="fa-light fa-arrow-right my_arrow"></i>
             </div>}
-              color='white' py='15px' px='4%' borderW='1px' />
+              color='white' py='5px' px='4%' borderW='1px' />
           </div>
 
           <div className='img_right_content' >
@@ -672,7 +670,7 @@ export default function Blog() {
               <span >Tham Gia Ngay </span>
               <i className="fa-light fa-arrow-right my_arrow"></i>
             </div>}
-              color='white' py='15px' px='4%' borderW='1px' />
+              color='white' py='5px' px='4%' borderW='1px' />
           </div>
 
 
@@ -683,71 +681,66 @@ export default function Blog() {
 
       </div>
 
+      {/* pagination */}
+      <div className='flex flex-wrap justify-between items-center w-[100%] pagination'>
+        <div className={`my_back_button p-2 rounded-sm flex flex-wrap w-[110%] justify-between items-center ${startIndex === 0 ? " text-[#B3C5D4] " : "cursor-pointer hover:bg-gray-200"} `}
+          onClick={() => {
 
-      <Pagination>
-        <PaginationContent className='flex flex-wrap justify-between items-center w-[100%]'>
+            handleBackPage()
+          }}>
+          <i className="fa-light fa-arrow-right -rotate-180"></i>         <span >Trang Trước</span>
+        </div>
 
-          <PaginationItem>
-            <div className={`my_back_button p-2 rounded-sm flex flex-wrap w-[110%] justify-between items-center ${startIndex === 0 ? " text-[#B3C5D4] " : "cursor-pointer hover:bg-gray-200"} `}
-              onClick={() => {
 
-                handleBackPage()
-              }}>
-              <i className="fa-light fa-arrow-right -rotate-180"></i>         <span >Trang Trước</span>
-            </div>
-
-          </PaginationItem>
-
-          {/* page number */}
-          <div className='flex flex-wrap w-[30%]'>
-            {/* 2 of page */}
-            {twoFistOfPage.map((item, index) => {
-              return <button key={index} className={`${(Math.floor(startIndex / 6) + 1) == item && "bg-[#D1F7EA]"}    rounded-[8px] py-[8px] px-[16px] hover:bg-slate-300  `} onClick={() => {
-                handleGetRange(item)
-              }
-              }>{item}</button>
-
+        {/* page number */}
+        <div className='flex flex-wrap w-[30%] page_number'>
+          {/* 2 of page */}
+          {twoFistOfPage.map((item, index) => {
+            return <button key={index} className={`${(Math.floor(startIndex / 6) + 1) == item && "bg-[#D1F7EA]"}    rounded-[8px] py-[8px] px-[16px] hover:bg-slate-300  `} onClick={() => {
+              handleGetRange(item)
             }
-            )}
+            }>{item}</button>
 
-            {/* page 3 */}
-            <button className={`${(Math.floor(startIndex / 6) + 1) == 3 && "bg-[#D1F7EA]"} ${isNone && "hidden"}   rounded-[8px] py-[8px] px-[16px] hover:bg-slate-300  `} onClick={() => {
-              handleGetRange(3)
-              setIsNone(true)
+          }
+          )}
+
+          {/* page 3 */}
+          <button className={`${(Math.floor(startIndex / 6) + 1) == 3 && "bg-[#D1F7EA]"} ${isNone && "hidden"}   rounded-[8px] py-[8px] px-[16px] hover:bg-slate-300  `} onClick={() => {
+            handleGetRange(3)
+            setIsNone(true)
+          }
+          }>{3}</button>
+
+          {/* mid page */}
+          {handleGetMidPage()}
+          ...
+
+          {/* 3 of page */}
+          {threeLastOfPage.map((item, index) => {
+            return <button key={index} className={`${(Math.floor(startIndex / 6) + 1) == item && "bg-[#D1F7EA]"} rounded-[8px] py-[8px] px-[16px] hover:bg-slate-300  `} onClick={() => {
+              handleGetRange(item)
             }
-            }>{3}</button>
+            }>{item}</button>
 
-            {/* mid page */}
-            {handleGetMidPage()}
-            ...
-
-            {/* 3 of page */}
-            {threeLastOfPage.map((item, index) => {
-              return <button key={index} className={`${(Math.floor(startIndex / 6) + 1) == item && "bg-[#D1F7EA]"} rounded-[8px] py-[8px] px-[16px] hover:bg-slate-300  `} onClick={() => {
-                handleGetRange(item)
-              }
-              }>{item}</button>
-
-            }
-            )}
-          </div>
+          }
+          )}
+        </div>
 
 
 
 
 
-          <PaginationItem >
-            <div className={`my_next_button p-2 rounded-sm flex flex-wrap w-[110%] justify-between items-center ${endIndex > data.length ? " text-[#B3C5D4] " : "cursor-pointer hover:bg-gray-200"} `}
-              onClick={() => {
+        <div className={`my_next_button p-2 rounded-sm flex flex-wrap w-[110%] justify-between items-center ${endIndex > data.length ? " text-[#B3C5D4] " : "cursor-pointer hover:bg-gray-200"} `}
+          onClick={() => {
 
-                handleNextPage()
-              }}>
-              <span >Trang Kế Tiếp</span> <i className="fa-light fa-arrow-right"></i>
-            </div>
+            handleNextPage()
+          }}>
+          <span >Trang Kế Tiếp</span> <i className="fa-light fa-arrow-right"></i>
+        </div>
+      </div>
 
-          </PaginationItem>
-        </PaginationContent>
-      </Pagination>
+
+
     </div>
   )
 }

@@ -101,7 +101,7 @@ ol{
 .blog_details_right .img_right_content button{
         width: 85%;
         position: absolute;
-        left: 46%;
+        left: 50%;
         transform: translateX(-50%);
         bottom: 8%;
     
@@ -139,6 +139,10 @@ ol{
     border-radius: 24px;
 
 }
+.discover_button{
+    width: 200px;
+}
+
 
 /* share */
 .blog_details .share{
@@ -160,5 +164,45 @@ ol{
     transition: all .5s;
     box-shadow:  5px 5px 12px #5a5a5a,
                  -5px -5px 12px #ffffff;
+}
+
+
+
+
+@media screen and (max-width:1199px){
+    
+    .img_right_content{
+        height: 480px;
+    }
+    .blog_details_right .img_right_content button{
+        width: 85%;
+        bottom: 5%;
+    
+    }
+    .blog_details_right .img_right_content button:hover{
+        transition: all 0.5s;
+        box-shadow:  5px 5px 12px #5a5a5a,
+                     -5px -5px 12px #ffffff;
+        background-color: #013DA0;
+        width: 86%;
+    }
+    .blog_details .share{
+        left: 1%;
+       
+    }
+    .discover_button{
+        width: 150px;
+    }
+}
+
+@media screen and (max-width:991px){
+    .my_relative {
+        flex-direction: column;
+    }
+
+    .my_relative .my_item{
+    width: 100%;    
+}
+    
 }
 

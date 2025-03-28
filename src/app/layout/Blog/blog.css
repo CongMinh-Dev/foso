@@ -67,12 +67,19 @@
     box-shadow:  5px 5px 12px #5a5a5a,
     -5px -5px 12px #ffffff;
 }
+.my_table_item button{
+    width: 200px;
+
+}
 .my_table_img{
     height: 347px;
+    width: 457px;
     border-radius: 24px;
     object-fit: cover;
     
 }
+
+/* right */
 .bg_input{
     position: relative;
     margin-top: 18px;
@@ -136,4 +143,79 @@ position: relative;
 .blog_right .img_right_content .my_arrow{
     rotate: 320deg;
     font-weight: 400;
+}
+
+/* pagination */
+.my_back_button,.my_next_button{
+ width: 130.1px;
+}
+
+
+@media screen and (max-width:1199px){
+    .my_table{
+       
+        justify-content: space-around;
+        
+    }
+    .my_table_item{
+        width: 45%;
+        height: 500px;
+        
+    }
+    .my_table_img{
+        height: 210px;
+    }
+    .my_table_item button{
+        width: 200px;
+    
+    }
+    .blog .page_number{
+        width: 60%;
+        justify-content: center;
+    }
+    .img_right_content{
+        height: 380px;
+    }
+    .img_right_content button{
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width:991px){
+    .meeting_content button{
+        width: 200px;
+        
+    }
+    .meeting_content button:hover{
+        width: 205px;
+        
+    }
+    .meeting img{
+        height: 250px;
+    }
+    
+    
+    .my_table{
+        margin-bottom: 30px;
+        
+    }
+    .my_table_item{
+        width: 100%;
+        
+    }
+    .my_table_img{
+        height: 310px;
+        width: 100%;
+    }
+    .my_table_item button{
+        width: 190px;
+    
+    }
+    
+    .blog .page_number{
+        width: 60%;
+    }
+    .bg_input input::placeholder{
+        opacity: 0;
+    }
 }

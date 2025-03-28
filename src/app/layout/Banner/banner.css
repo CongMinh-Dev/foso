@@ -29,7 +29,7 @@
 
 
 
-@media screen and (max-width:1200px){
+@media screen and (max-width:1199px){
     .banner .note_img{
         width: 100%;
         height: 156.5px;
@@ -61,4 +61,11 @@
     }
     
 
+}
+
+@media screen and (max-width:991px){
+    .banner{
+        margin-top: 100px;
+    }
+    
 }
