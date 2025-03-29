@@ -991,13 +991,13 @@ export default function Blog() {
 
   const pageArray: number[] = []
   const handleGetArrayPage = () => {
-    for (let i = 1; i <= (Math.ceil(data.length / 6)); i++) {
+    for (let i = 1; i <= (Math.ceil(data.length / rowsPerPage)); i++) {
       pageArray.push(i)
     }
   }
   handleGetArrayPage()
-  const twoFistOfPage = pageArray.slice(0, 2)
-  const twoLastOfPage = pageArray.slice(-2)
+  const twoFistOfPage = pageArray.slice(0,(amountOfFirst-1) )
+  const twoLastOfPage = pageArray.slice(-(amountOfLast-1) )
 
 
 
@@ -1006,30 +1006,20 @@ export default function Blog() {
     setIsNoneLast(false)
     if (numberPage == 1) {
       setStartIndex(0)
-    } else { setStartIndex((numberPage - 1) * 6) }
-    setEndIndex(numberPage * 6)
+    } else { setStartIndex((numberPage - 1) * rowsPerPage) }
+    setEndIndex(numberPage * rowsPerPage)
   }
-  // xét màu của nút thứ 2 của nhóm trang ở giữa
-  const handleSetBg = (numberOfPage: number) => {
-    if (numberOfPage == pageArray.length - 3) {
-      document.getElementById("numberPageMid2th")?.classList.add("bg-[#D1F7EA]")
-      console.log("gan mau")
-    } else {
-      document.getElementById("numberPageMid2th")?.classList.remove("bg-[#D1F7EA]")
-      console.log("xoa mau")
-    }
-  }
+ 
 
   const handleGetMidPage = () => {
-    const numberPageOfMid = Math.floor(startIndex / 6)
-    if (3 < (numberPageOfMid + 2) && (numberPageOfMid + 2) < pageArray.length) {
+    const numberPageOfMid = Math.floor(startIndex / rowsPerPage)
+    if (amountOfFirst < (numberPageOfMid + 2) && (numberPageOfMid + 2) < pageArray.length) {
         
       return <div >
 
 
         <button className={`bg-[#D1F7EA] rounded-[8px] py-[8px] px-[16px] hover:bg-slate-300  `} onClick={() => {
           handleGetRange(numberPageOfMid + 1)
-          handleSetBg(numberPageOfMid + 1)
           handleBackPage()
         }
         }>{numberPageOfMid + 1}</button>
@@ -1058,10 +1048,9 @@ export default function Blog() {
       if(startIndex==(amountOfFirst-1)*rowsPerPage){
         setIsNone(false)
       }
-      if(startIndex==48  ){
+      if(startIndex==(amountOfFirst-1)*24 ){
         setIsNoneLast(true)
       }
-      console.log(startIndex)
       setStartIndex(startIndex - rowsPerPage);
       setEndIndex(endIndex - rowsPerPage);
       
@@ -1211,10 +1200,10 @@ export default function Blog() {
 
 
         {/* page number */}
-        <div className='flex flex-wrap w-[30%] page_number'>
+        <div className='flex flex-wrap w-[60%] page_number justify-center'>
           {/* 2 fist of page */}
           {twoFistOfPage.map((item, index) => {
-            return <button key={index} className={`${(Math.floor(startIndex / 6) + 1) == item && "bg-[#D1F7EA]"}    rounded-[8px] py-[8px] px-[16px] hover:bg-slate-300  `} onClick={() => {
+            return <button key={index} className={`${(Math.floor(startIndex / rowsPerPage) + 1) == item && "bg-[#D1F7EA]"}    rounded-[8px] py-[8px] px-[16px] hover:bg-slate-300  `} onClick={() => {
               handleGetRange(item)
             }
             }>{item}</button>
@@ -1223,7 +1212,7 @@ export default function Blog() {
           )}
 
           {/* page 3 */}
-          <button className={`${(Math.floor(startIndex / 6) + 1) == 3 && "bg-[#D1F7EA]"} ${isNone && "hidden"}   rounded-[8px] py-[8px] px-[16px] hover:bg-slate-300  `} onClick={() => {
+          <button className={`${(Math.floor(startIndex / rowsPerPage) + 1) == amountOfFirst && "bg-[#D1F7EA]"} ${isNone && "hidden"}   rounded-[8px] py-[8px] px-[16px] hover:bg-slate-300  `} onClick={() => {
             handleGetRange(3)
             setIsNone(true)
           }
@@ -1234,7 +1223,7 @@ export default function Blog() {
           ...
 
           {/* page -3 */}
-          <button className={`${(Math.floor(startIndex / 6) + 1) == pageArray.length - 2 && "bg-[#D1F7EA]"} ${isNoneLast && "hidden"}   rounded-[8px] py-[8px] px-[16px] hover:bg-slate-300  `} onClick={() => {
+          <button className={`${(Math.floor(startIndex / rowsPerPage) + 1) == pageArray.length - 2 && "bg-[#D1F7EA]"} ${isNoneLast && "hidden"}   rounded-[8px] py-[8px] px-[16px] hover:bg-slate-300  `} onClick={() => {
             handleGetRange(pageArray.length - 2)
             setIsNoneLast(true)
           }
@@ -1242,7 +1231,7 @@ export default function Blog() {
 
           {/* 2 last of page */}
           {twoLastOfPage.map((item, index) => {
-            return <button key={index} className={`${(Math.floor(startIndex / 6) + 1) == item && "bg-[#D1F7EA]"} rounded-[8px] py-[8px] px-[16px] hover:bg-slate-300  `} onClick={() => {
+            return <button key={index} className={`${(Math.floor(startIndex / rowsPerPage) + 1) == item && "bg-[#D1F7EA]"} rounded-[8px] py-[8px] px-[16px] hover:bg-slate-300  `} onClick={() => {
               handleGetRange(item)
             }
             }>{item}</button>
