@@ -10,10 +10,486 @@ import Link from 'next/link';
 
 export default function Blog() {
   // set render data
-  const rowsPerPage = 6;
-  const [startIndex, setStartIndex] = useState(0);
-  const [endIndex, setEndIndex] = useState(rowsPerPage);
-  const data = [
+
+  const [data, setData] = useState([
+    {
+      url: "https://fososoft.vn/wp-content/uploads/2023/03/5s.png",
+      loai: "quản lý sản xuất",
+      tittle: "Quy trình 5S là gì? Cách ứng dụng hiệu quả nên biết",
+      date: "17/11/2022",
+      time: "10 phút đọc"
+
+    },
+    {
+      url: "https://fososoft.vn/wp-content/uploads/2022/11/quan-ly-san-xuat-3.png",
+      loai: "quản lý sản xuất",
+      tittle: "Tại sao Bom quan trọng trong quản lý sản xuất",
+      date: "17/11/2022",
+      time: "10 phút đọc"
+
+    },
+    {
+      url: "https://fososoft.vn/wp-content/uploads/2022/11/quan-ly-san-xuat-3.png",
+      loai: "quản lý sản xuất",
+      tittle: "Tại sao Bom quan trọng trong quản lý sản xuất",
+      date: "17/11/2022",
+      time: "10 phút đọc"
+
+    },
+    {
+      url: "https://fososoft.vn/wp-content/uploads/2022/11/quan-ly-san-xuat-3.png",
+      loai: "quản lý sản xuất",
+      tittle: "Tại sao Bom quan trọng trong quản lý sản xuất",
+      date: "17/11/2022",
+      time: "10 phút đọc"
+
+    },
+    {
+      url: "https://fososoft.vn/wp-content/uploads/2022/11/quan-ly-san-xuat-3.png",
+      loai: "quản lý sản xuất",
+      tittle: "Tại sao Bom quan trọng trong quản lý sản xuất",
+      date: "17/11/2022",
+      time: "10 phút đọc"
+
+    },
+    {
+      url: "https://fososoft.vn/wp-content/uploads/2023/03/5s.png",
+      loai: "quản lý sản xuất",
+      tittle: "Quy trình 5S là gì? Cách ứng dụng hiệu quả nên biết",
+      date: "17/11/2022",
+      time: "10 phút đọc"
+
+    },
+    {
+      url: "https://fososoft.vn/wp-content/uploads/2022/11/quan-ly-san-xuat-3.png",
+      loai: "quản lý sản xuất",
+      tittle: "Tại sao Bom quan trọng trong quản lý sản xuất",
+      date: "17/11/2022",
+      time: "10 phút đọc"
+
+    },
+    {
+      url: "https://fososoft.vn/wp-content/uploads/2022/11/quan-ly-san-xuat-3.png",
+      loai: "quản lý sản xuất",
+      tittle: "Tại sao Bom quan trọng trong quản lý sản xuất",
+      date: "17/11/2022",
+      time: "10 phút đọc"
+
+    },
+    {
+      url: "https://fososoft.vn/wp-content/uploads/2022/11/quan-ly-san-xuat-3.png",
+      loai: "quản lý sản xuất",
+      tittle: "Tại sao Bom quan trọng trong quản lý sản xuất",
+      date: "17/11/2022",
+      time: "10 phút đọc"
+
+    },
+    {
+      url: "https://fososoft.vn/wp-content/uploads/2022/11/quan-ly-san-xuat-3.png",
+      loai: "quản lý sản xuất",
+      tittle: "Tại sao Bom quan trọng trong quản lý sản xuất",
+      date: "17/11/2022",
+      time: "10 phút đọc"
+
+    },
+    {
+      url: "https://fososoft.vn/wp-content/uploads/2023/03/5s.png",
+      loai: "quản lý sản xuất",
+      tittle: "Quy trình 5S là gì? Cách ứng dụng hiệu quả nên biết",
+      date: "17/11/2022",
+      time: "10 phút đọc"
+
+    },
+    {
+      url: "https://fososoft.vn/wp-content/uploads/2022/11/quan-ly-san-xuat-3.png",
+      loai: "quản lý sản xuất",
+      tittle: "Tại sao Bom quan trọng trong quản lý sản xuất",
+      date: "17/11/2022",
+      time: "10 phút đọc"
+
+    },
+    {
+      url: "https://fososoft.vn/wp-content/uploads/2022/11/quan-ly-san-xuat-3.png",
+      loai: "quản lý sản xuất",
+      tittle: "Tại sao Bom quan trọng trong quản lý sản xuất",
+      date: "17/11/2022",
+      time: "10 phút đọc"
+
+    },
+    {
+      url: "https://fososoft.vn/wp-content/uploads/2022/11/quan-ly-san-xuat-3.png",
+      loai: "quản lý sản xuất",
+      tittle: "Tại sao Bom quan trọng trong quản lý sản xuất",
+      date: "17/11/2022",
+      time: "10 phút đọc"
+
+    },
+    {
+      url: "https://fososoft.vn/wp-content/uploads/2022/11/quan-ly-san-xuat-3.png",
+      loai: "quản lý sản xuất",
+      tittle: "Tại sao Bom quan trọng trong quản lý sản xuất",
+      date: "17/11/2022",
+      time: "10 phút đọc"
+
+    },
+    {
+      url: "https://fososoft.vn/wp-content/uploads/2022/11/quan-ly-san-xuat-3.png",
+      loai: "quản lý sản xuất",
+      tittle: "Tại sao Bom quan trọng trong quản lý sản xuất",
+      date: "17/11/2022",
+      time: "10 phút đọc"
+
+    },
+    {
+      url: "https://fososoft.vn/wp-content/uploads/2022/11/quan-ly-san-xuat-3.png",
+      loai: "quản lý sản xuất",
+      tittle: "Tại sao Bom quan trọng trong quản lý sản xuất",
+      date: "17/11/2022",
+      time: "10 phút đọc"
+
+    },
+    {
+      url: "https://fososoft.vn/wp-content/uploads/2023/03/5s.png",
+      loai: "quản lý sản xuất",
+      tittle: "Quy trình 5S là gì? Cách ứng dụng hiệu quả nên biết",
+      date: "17/11/2022",
+      time: "10 phút đọc"
+
+    },
+    {
+      url: "https://fososoft.vn/wp-content/uploads/2022/11/quan-ly-san-xuat-3.png",
+      loai: "quản lý sản xuất",
+      tittle: "Tại sao Bom quan trọng trong quản lý sản xuất",
+      date: "17/11/2022",
+      time: "10 phút đọc"
+
+    },
+    {
+      url: "https://fososoft.vn/wp-content/uploads/2022/11/quan-ly-san-xuat-3.png",
+      loai: "quản lý sản xuất",
+      tittle: "Tại sao Bom quan trọng trong quản lý sản xuất",
+      date: "17/11/2022",
+      time: "10 phút đọc"
+
+    },
+    {
+      url: "https://fososoft.vn/wp-content/uploads/2022/11/quan-ly-san-xuat-3.png",
+      loai: "quản lý sản xuất",
+      tittle: "Tại sao Bom quan trọng trong quản lý sản xuất",
+      date: "17/11/2022",
+      time: "10 phút đọc"
+
+    },
+    {
+      url: "https://fososoft.vn/wp-content/uploads/2022/11/quan-ly-san-xuat-3.png",
+      loai: "quản lý sản xuất",
+      tittle: "Tại sao Bom quan trọng trong quản lý sản xuất",
+      date: "17/11/2022",
+      time: "10 phút đọc"
+
+    },
+    {
+      url: "https://fososoft.vn/wp-content/uploads/2023/03/5s.png",
+      loai: "quản lý sản xuất",
+      tittle: "Quy trình 5S là gì? Cách ứng dụng hiệu quả nên biết",
+      date: "17/11/2022",
+      time: "10 phút đọc"
+
+    },
+    {
+      url: "https://fososoft.vn/wp-content/uploads/2022/11/quan-ly-san-xuat-3.png",
+      loai: "quản lý sản xuất",
+      tittle: "Tại sao Bom quan trọng trong quản lý sản xuất",
+      date: "17/11/2022",
+      time: "10 phút đọc"
+
+    },
+    {
+      url: "https://fososoft.vn/wp-content/uploads/2022/11/quan-ly-san-xuat-3.png",
+      loai: "quản lý sản xuất",
+      tittle: "Tại sao Bom quan trọng trong quản lý sản xuất",
+      date: "17/11/2022",
+      time: "10 phút đọc"
+
+    },
+    {
+      url: "https://fososoft.vn/wp-content/uploads/2022/11/quan-ly-san-xuat-3.png",
+      loai: "quản lý sản xuất",
+      tittle: "Tại sao Bom quan trọng trong quản lý sản xuất",
+      date: "17/11/2022",
+      time: "10 phút đọc"
+
+    },
+    {
+      url: "https://fososoft.vn/wp-content/uploads/2022/11/quan-ly-san-xuat-3.png",
+      loai: "quản lý sản xuất",
+      tittle: "Tại sao Bom quan trọng trong quản lý sản xuất",
+      date: "17/11/2022",
+      time: "10 phút đọc"
+
+    },
+    {
+      url: "https://fososoft.vn/wp-content/uploads/2022/11/quan-ly-san-xuat-3.png",
+      loai: "quản lý sản xuất",
+      tittle: "Tại sao Bom quan trọng trong quản lý sản xuất",
+      date: "17/11/2022",
+      time: "10 phút đọc"
+
+    },
+    {
+      url: "https://fososoft.vn/wp-content/uploads/2022/11/quan-ly-san-xuat-3.png",
+      loai: "quản lý sản xuất",
+      tittle: "Tại sao Bom quan trọng trong quản lý sản xuất",
+      date: "17/11/2022",
+      time: "10 phút đọc"
+
+    },
+    {
+      url: "https://fososoft.vn/wp-content/uploads/2023/03/5s.png",
+      loai: "quản lý sản xuất",
+      tittle: "Quy trình 5S là gì? Cách ứng dụng hiệu quả nên biết",
+      date: "17/11/2022",
+      time: "10 phút đọc"
+
+    },
+    {
+      url: "https://fososoft.vn/wp-content/uploads/2022/11/quan-ly-san-xuat-3.png",
+      loai: "quản lý sản xuất",
+      tittle: "Tại sao Bom quan trọng trong quản lý sản xuất",
+      date: "17/11/2022",
+      time: "10 phút đọc"
+
+    },
+    {
+      url: "https://fososoft.vn/wp-content/uploads/2022/11/quan-ly-san-xuat-3.png",
+      loai: "quản lý sản xuất",
+      tittle: "Tại sao Bom quan trọng trong quản lý sản xuất",
+      date: "17/11/2022",
+      time: "10 phút đọc"
+
+    },
+    {
+      url: "https://fososoft.vn/wp-content/uploads/2022/11/quan-ly-san-xuat-3.png",
+      loai: "quản lý sản xuất",
+      tittle: "Tại sao Bom quan trọng trong quản lý sản xuất",
+      date: "17/11/2022",
+      time: "10 phút đọc"
+
+    },
+    {
+      url: "https://fososoft.vn/wp-content/uploads/2022/11/quan-ly-san-xuat-3.png",
+      loai: "quản lý sản xuất",
+      tittle: "Tại sao Bom quan trọng trong quản lý sản xuất",
+      date: "17/11/2022",
+      time: "10 phút đọc"
+
+    },
+    {
+      url: "https://fososoft.vn/wp-content/uploads/2023/03/5s.png",
+      loai: "quản lý sản xuất",
+      tittle: "Quy trình 5S là gì? Cách ứng dụng hiệu quả nên biết",
+      date: "17/11/2022",
+      time: "10 phút đọc"
+
+    },
+    {
+      url: "https://fososoft.vn/wp-content/uploads/2022/11/quan-ly-san-xuat-3.png",
+      loai: "quản lý sản xuất",
+      tittle: "Tại sao Bom quan trọng trong quản lý sản xuất",
+      date: "17/11/2022",
+      time: "10 phút đọc"
+
+    },
+    {
+      url: "https://fososoft.vn/wp-content/uploads/2022/11/quan-ly-san-xuat-3.png",
+      loai: "quản lý sản xuất",
+      tittle: "Tại sao Bom quan trọng trong quản lý sản xuất",
+      date: "17/11/2022",
+      time: "10 phút đọc"
+
+    },
+    {
+      url: "https://fososoft.vn/wp-content/uploads/2022/11/quan-ly-san-xuat-3.png",
+      loai: "quản lý sản xuất",
+      tittle: "Tại sao Bom quan trọng trong quản lý sản xuất",
+      date: "17/11/2022",
+      time: "10 phút đọc"
+
+    },
+    {
+      url: "https://fososoft.vn/wp-content/uploads/2022/11/quan-ly-san-xuat-3.png",
+      loai: "quản lý sản xuất",
+      tittle: "Tại sao Bom quan trọng trong quản lý sản xuất",
+      date: "17/11/2022",
+      time: "10 phút đọc"
+
+    },
+    {
+      url: "https://fososoft.vn/wp-content/uploads/2022/11/quan-ly-san-xuat-3.png",
+      loai: "quản lý sản xuất",
+      tittle: "Tại sao Bom quan trọng trong quản lý sản xuất",
+      date: "17/11/2022",
+      time: "10 phút đọc"
+
+    },
+    {
+      url: "https://fososoft.vn/wp-content/uploads/2022/11/quan-ly-san-xuat-3.png",
+      loai: "quản lý sản xuất",
+      tittle: "Tại sao Bom quan trọng trong quản lý sản xuất",
+      date: "17/11/2022",
+      time: "10 phút đọc"
+
+    },
+    {
+      url: "https://fososoft.vn/wp-content/uploads/2023/03/5s.png",
+      loai: "quản lý sản xuất",
+      tittle: "Quy trình 5S là gì? Cách ứng dụng hiệu quả nên biết",
+      date: "17/11/2022",
+      time: "10 phút đọc"
+
+    },
+    {
+      url: "https://fososoft.vn/wp-content/uploads/2022/11/quan-ly-san-xuat-3.png",
+      loai: "quản lý sản xuất",
+      tittle: "Tại sao Bom quan trọng trong quản lý sản xuất",
+      date: "17/11/2022",
+      time: "10 phút đọc"
+
+    },
+    {
+      url: "https://fososoft.vn/wp-content/uploads/2022/11/quan-ly-san-xuat-3.png",
+      loai: "quản lý sản xuất",
+      tittle: "Tại sao Bom quan trọng trong quản lý sản xuất",
+      date: "17/11/2022",
+      time: "10 phút đọc"
+
+    },
+    {
+      url: "https://fososoft.vn/wp-content/uploads/2022/11/quan-ly-san-xuat-3.png",
+      loai: "quản lý sản xuất",
+      tittle: "Tại sao Bom quan trọng trong quản lý sản xuất",
+      date: "17/11/2022",
+      time: "10 phút đọc"
+
+    },
+    {
+      url: "https://fososoft.vn/wp-content/uploads/2022/11/quan-ly-san-xuat-3.png",
+      loai: "quản lý sản xuất",
+      tittle: "Tại sao Bom quan trọng trong quản lý sản xuất",
+      date: "17/11/2022",
+      time: "10 phút đọc"
+
+    },
+    {
+      url: "https://fososoft.vn/wp-content/uploads/2023/03/5s.png",
+      loai: "quản lý sản xuất",
+      tittle: "Quy trình 5S là gì? Cách ứng dụng hiệu quả nên biết",
+      date: "17/11/2022",
+      time: "10 phút đọc"
+
+    },
+    {
+      url: "https://fososoft.vn/wp-content/uploads/2022/11/quan-ly-san-xuat-3.png",
+      loai: "quản lý sản xuất",
+      tittle: "Tại sao Bom quan trọng trong quản lý sản xuất",
+      date: "17/11/2022",
+      time: "10 phút đọc"
+
+    },
+    {
+      url: "https://fososoft.vn/wp-content/uploads/2022/11/quan-ly-san-xuat-3.png",
+      loai: "quản lý sản xuất",
+      tittle: "Tại sao Bom quan trọng trong quản lý sản xuất",
+      date: "17/11/2022",
+      time: "10 phút đọc"
+
+    },
+    {
+      url: "https://fososoft.vn/wp-content/uploads/2022/11/quan-ly-san-xuat-3.png",
+      loai: "quản lý sản xuất",
+      tittle: "Tại sao Bom quan trọng trong quản lý sản xuất",
+      date: "17/11/2022",
+      time: "10 phút đọc"
+
+    },
+    {
+      url: "https://fososoft.vn/wp-content/uploads/2022/11/quan-ly-san-xuat-3.png",
+      loai: "quản lý sản xuất",
+      tittle: "Tại sao Bom quan trọng trong quản lý sản xuất",
+      date: "17/11/2022",
+      time: "10 phút đọc"
+
+    },
+    {
+      url: "https://fososoft.vn/wp-content/uploads/2022/11/quan-ly-san-xuat-3.png",
+      loai: "quản lý sản xuất",
+      tittle: "Tại sao Bom quan trọng trong quản lý sản xuất",
+      date: "17/11/2022",
+      time: "10 phút đọc"
+
+    },
+    {
+      url: "https://fososoft.vn/wp-content/uploads/2022/11/quan-ly-san-xuat-3.png",
+      loai: "quản lý sản xuất",
+      tittle: "Tại sao Bom quan trọng trong quản lý sản xuất",
+      date: "17/11/2022",
+      time: "10 phút đọc"
+
+    },
+    {
+      url: "https://fososoft.vn/wp-content/uploads/2022/11/quan-ly-san-xuat-3.png",
+      loai: "quản lý sản xuất",
+      tittle: "Tại sao Bom quan trọng trong quản lý sản xuất",
+      date: "17/11/2022",
+      time: "10 phút đọc"
+
+    },
+    {
+      url: "https://fososoft.vn/wp-content/uploads/2022/11/quan-ly-san-xuat-3.png",
+      loai: "quản lý sản xuất",
+      tittle: "Tại sao Bom quan trọng trong quản lý sản xuất",
+      date: "17/11/2022",
+      time: "10 phút đọc"
+
+    },
+    {
+      url: "https://fososoft.vn/wp-content/uploads/2022/11/quan-ly-san-xuat-3.png",
+      loai: "quản lý sản xuất",
+      tittle: "Tại sao Bom quan trọng trong quản lý sản xuất",
+      date: "17/11/2022",
+      time: "10 phút đọc"
+
+    },
+    {
+      url: "https://fososoft.vn/wp-content/uploads/2022/11/quan-ly-san-xuat-3.png",
+      loai: "quản lý sản xuất",
+      tittle: "Tại sao Bom quan trọng trong quản lý sản xuất",
+      date: "17/11/2022",
+      time: "10 phút đọc"
+
+    },
+    {
+      url: "https://fososoft.vn/wp-content/uploads/2022/11/quan-ly-san-xuat-3.png",
+      loai: "quản lý sản xuất",
+      tittle: "Tại sao Bom quan trọng trong quản lý sản xuất",
+      date: "17/11/2022",
+      time: "10 phút đọc"
+
+    },
+    {
+      url: "https://fososoft.vn/wp-content/uploads/2022/11/quan-ly-san-xuat-3.png",
+      loai: "quản lý sản xuất",
+      tittle: "Tại sao Bom quan trọng trong quản lý sản xuất",
+      date: "17/11/2022",
+      time: "10 phút đọc"
+
+    }
+
+  ])
+
+
+  // search
+  const dataMain = [
     {
       url: "https://fososoft.vn/wp-content/uploads/2023/03/5s.png",
       loai: "quản lý sản xuất",
@@ -488,9 +964,29 @@ export default function Blog() {
     }
 
   ]
+  const handleSearch = (text: string | number) => {
+    let textString = text.toString()
+    textString = textString.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+    const dataClone = []
+    for (let i = 0; i < dataMain.length; i++) {
+      let name = dataMain[i].tittle.toLowerCase()
+      name = name.normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+      if (name.indexOf(textString) != -1) {
+        dataClone.push(dataMain[i])
+      }
+    }
+    setData(dataClone)
+  }
 
 
+  // pagination
+  const rowsPerPage = 6;
+  const [startIndex, setStartIndex] = useState(0);
+  const [endIndex, setEndIndex] = useState(rowsPerPage);
   const [isNone, setIsNone] = useState(false)
+  const [isNoneLast, setIsNoneLast] = useState(false)
+  const amountOfFirst=3
+  const amountOfLast=3
 
 
   const pageArray: number[] = []
@@ -500,48 +996,54 @@ export default function Blog() {
     }
   }
   handleGetArrayPage()
-
   const twoFistOfPage = pageArray.slice(0, 2)
-
-  const threeLastOfPage = pageArray.slice(-3)
+  const twoLastOfPage = pageArray.slice(-2)
 
 
 
   const handleGetRange = (numberPage: number) => {
     setIsNone(false)
+    setIsNoneLast(false)
     if (numberPage == 1) {
       setStartIndex(0)
     } else { setStartIndex((numberPage - 1) * 6) }
     setEndIndex(numberPage * 6)
   }
-  // ok
+  // xét màu của nút thứ 2 của nhóm trang ở giữa
+  const handleSetBg = (numberOfPage: number) => {
+    if (numberOfPage == pageArray.length - 3) {
+      document.getElementById("numberPageMid2th")?.classList.add("bg-[#D1F7EA]")
+      console.log("gan mau")
+    } else {
+      document.getElementById("numberPageMid2th")?.classList.remove("bg-[#D1F7EA]")
+      console.log("xoa mau")
+    }
+  }
+
   const handleGetMidPage = () => {
-    if (3 < (Math.floor(startIndex / 6) + 2) && (Math.floor(startIndex / 6) + 2) < pageArray.length - 2) {
-
+    const numberPageOfMid = Math.floor(startIndex / 6)
+    if (3 < (numberPageOfMid + 2) && (numberPageOfMid + 2) < pageArray.length) {
+        
       return <div >
+
+
         <button className={`bg-[#D1F7EA] rounded-[8px] py-[8px] px-[16px] hover:bg-slate-300  `} onClick={() => {
-          handleGetRange(Math.floor(startIndex / 6) + 1)
+          handleGetRange(numberPageOfMid + 1)
+          handleSetBg(numberPageOfMid + 1)
+          handleBackPage()
         }
-        }>{Math.floor(startIndex / 6) + 1}</button>
+        }>{numberPageOfMid + 1}</button>
 
         <button className={` rounded-[8px] py-[8px] px-[16px] hover:bg-slate-300  `} onClick={() => {
-          handleGetRange(Math.floor(startIndex / 6) + 2)
-        }
-        }>{Math.floor(startIndex / 6) + 2}</button>
+          handleBackPage()
 
-      </div>
-
-    } else if (2 < (Math.floor(startIndex / 6) + 1)) {
-      return <div>
-        <button className={` rounded-[8px] py-[8px] px-[16px] hover:bg-slate-300  `} onClick={() => {
-          handleGetRange(pageArray.length - 4)
         }
-        }>{pageArray.length - 4}</button>
+        }><i className="fa-solid fa-chevrons-left"></i></button>
 
-        <button className={` rounded-[8px] py-[8px] px-[16px] hover:bg-slate-300  `} onClick={() => {
-          handleGetRange(pageArray.length - 3)
+        <button className={`rounded-[8px] py-[8px] px-[16px] hover:bg-slate-300  `} onClick={() => {
+          handleNextPage()
         }
-        }>{pageArray.length - 3}</button>
+        }><i className="fa-solid fa-chevrons-right"></i></button>
 
       </div>
 
@@ -553,16 +1055,33 @@ export default function Blog() {
     if (startIndex == 0) {
 
     } else {
+      if(startIndex==(amountOfFirst-1)*rowsPerPage){
+        setIsNone(false)
+      }
+      if(startIndex==48  ){
+        setIsNoneLast(true)
+      }
+      console.log(startIndex)
       setStartIndex(startIndex - rowsPerPage);
       setEndIndex(endIndex - rowsPerPage);
+      
     }
   }
 
 
   const handleNextPage = () => {
-    if ((Math.floor(startIndex / 6)) == pageArray.length - 1) {
+    if ((Math.floor(startIndex / rowsPerPage)) == pageArray.length - 1) {
 
     } else {
+      if(startIndex== (amountOfFirst-2)*rowsPerPage ){
+        setIsNone(true)
+      }
+      if(startIndex== (pageArray.length-4)*rowsPerPage ){
+        setIsNoneLast(true)
+      }
+      if(startIndex== (pageArray.length-3)*rowsPerPage){
+        setIsNoneLast(false)
+      }
       setStartIndex(startIndex + rowsPerPage);
       setEndIndex(endIndex + rowsPerPage);
     }
@@ -635,7 +1154,10 @@ export default function Blog() {
       <div className='blog_right'>
         <h3 className='text-[24px] font-extrabold'>Tìm Kiếm</h3>
         <div className='bg_input'>
-          <input type="text" placeholder='Tìm kiếm bài viết' />
+          <input onChange={(e) => {
+            handleSearch(e.target.value)
+          }
+          } type="text" placeholder='Tìm kiếm bài viết' />
           <div className='bg_icon_search'>
             <i className="fa-regular fa-magnifying-glass"></i>
           </div>
@@ -690,7 +1212,7 @@ export default function Blog() {
 
         {/* page number */}
         <div className='flex flex-wrap w-[30%] page_number'>
-          {/* 2 of page */}
+          {/* 2 fist of page */}
           {twoFistOfPage.map((item, index) => {
             return <button key={index} className={`${(Math.floor(startIndex / 6) + 1) == item && "bg-[#D1F7EA]"}    rounded-[8px] py-[8px] px-[16px] hover:bg-slate-300  `} onClick={() => {
               handleGetRange(item)
@@ -706,13 +1228,20 @@ export default function Blog() {
             setIsNone(true)
           }
           }>{3}</button>
-
+          ...
           {/* mid page */}
           {handleGetMidPage()}
           ...
 
-          {/* 3 of page */}
-          {threeLastOfPage.map((item, index) => {
+          {/* page -3 */}
+          <button className={`${(Math.floor(startIndex / 6) + 1) == pageArray.length - 2 && "bg-[#D1F7EA]"} ${isNoneLast && "hidden"}   rounded-[8px] py-[8px] px-[16px] hover:bg-slate-300  `} onClick={() => {
+            handleGetRange(pageArray.length - 2)
+            setIsNoneLast(true)
+          }
+          }>{pageArray.length - 2}</button>
+
+          {/* 2 last of page */}
+          {twoLastOfPage.map((item, index) => {
             return <button key={index} className={`${(Math.floor(startIndex / 6) + 1) == item && "bg-[#D1F7EA]"} rounded-[8px] py-[8px] px-[16px] hover:bg-slate-300  `} onClick={() => {
               handleGetRange(item)
             }
